@@ -63,3 +63,6 @@ footer .social-links a {
 footer .social-links a:hover {
     text-decoration: underline;
 }
+footer .credits p {
+    margin-top: 2px;
+}
