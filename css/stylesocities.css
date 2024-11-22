@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 /* Navbar Styles */
 .navbar {
     display: flex;
@@ -42,7 +43,29 @@
     font-size: 0.9rem;
 }
 
-/* Socities */
+/* Introduction To Societies */
+
+.introduction {
+    background: linear-gradient(to right, #3b5fa5, #533c76), url('images/hero-bg.jpg') no-repeat center center / cover;
+    color: white;
+
+    padding: 3rem 2rem;
+    clip-path: (0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.introduction h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.socities-list .introduction p  {
+    font-size: 1rem
+}
+
+
+/* Socities Transition */
 .tech-socities h2 {
 color: #004aad;
 }
@@ -67,25 +90,16 @@ color: #004aad;
        transform: translateX(0);
     }
     25% {
-        transform: translateX(0);
-    }
-    30% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
     50% {
         transform: translateX(-100%);
     }
-    55% {
-        transform: translateX(-200%);
-    }
     75% {
-        transform: translateX(-200%);
-    }
-    80% {
-        transform: translateX(-300%);
+        transform: translateX(-100%);
     }
     100% {
-        transform: translateX(-300%);
+        transform: translateX(0%);
     }
 } 
 
