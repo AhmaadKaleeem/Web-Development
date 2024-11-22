@@ -42,6 +42,58 @@
     font-size: 0.9rem;
 }
 
+/* Socities */
+.tech-socities h2 {
+color: #004aad;
+}
+
+
+.images-container {
+    width: 125vmin;    
+    margin: 1rem auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+    display: flex;
+}
+
+.logo {
+    width: 25%;
+    display: flex; 
+    animation: slide 10s infinite;
+}
+@keyframes slide {
+    0% {
+       transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+} 
+
+
+.images-container .logo img {
+width: 100%;
+border: 15px solid white;
+}
 
 
 /* Footer */
