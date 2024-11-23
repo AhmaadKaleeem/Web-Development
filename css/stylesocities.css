@@ -108,12 +108,12 @@
 
 .images-container {
     
-    width: 80vmin;    
+    width: 65vmin;    
     overflow: hidden;
     margin-left: 25rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    border-radius: 71px;
+    border-radius: 81px;
     box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
     display: flex;
     
