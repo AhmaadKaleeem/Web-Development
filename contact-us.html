@@ -3,42 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feedback & Report Issue - AU SSC</title>
     <link rel="stylesheet" href="css/stylecontact-us.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <img src="images/logo.png" alt="Air University Student Support Center Logo">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="societies.html">Societies</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about-us.html">About Us</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="#" onclick="Tawk_API.toggle();" class="chatbox">Chat Support</a>
+            </nav>
+        </div>
+    </header>
 
-      <!--  Navigation Bar   -->
-<Header> 
-    <div  class="navbar"> 
-      <img src="images/logo.png" alt="Air University Student Support Center Logo">
-      <nav>
-        <a href="home.html">Home</a>
-        <a href="events.html">Events</a>
-        <a href="socities.html" >Societies </a>
-        <a href="gallery.html" >Gallery </a>
-        <a href="about-us.html"> About Us </a>
-        <a href="contact-us.html"> Contact Us </a>
-        <a href="report-issue.html">  Feedback and Issues </a>
-        <a href="#" onclick="Tawk_API.toggle();" class="chatbox" >  Chat Support </a>
-      </nav>
-    </div> 
+    <!-- Feedback Form Section -->
+    <section class="feedback-form">
+        <div class="forms">
+            <img src="images/std-feedbackbg.png" alt="Feedback Background">
+            <h2>Feedback Form</h2>
+            <p>
+                We are happy to have you here and would love to hear your feedback about Air University and the Directorate of Student Affairs.
+            </p>
+            <form action="/submit" method="post" class="form-container">
+                <label for="feedback-name">Name:</label>
+                <input type="text" id="feedback-name" name="name" placeholder="Your Name" required>
 
-    <!-- Footer -->
+                <label for="feedback-email">Student Email:</label>
+                <input type="email" id="feedback-email" name="email" placeholder="e.g., name@students.au.edu.pk" required pattern=".*@students\.au\.edu\.pk" 
+                title="Email must be from the students.au.edu.pk domain">
+
+                <label for="feedback-domain">Domain:</label>
+                <input type="text" id="feedback-domain" name="domain" placeholder="e.g., Air University or Student Affairs">
+
+                <label for="feedback-content">Feedback:</label>
+                <textarea id="feedback-content" name="feedback" rows="5" placeholder="Share your thoughts..." required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Report Issue Form Section -->
+    <section class="issue-form">
+        <div class="forms">
+            <img src="images/std-reportissue.png" alt="Report Issue Background">
+            <h2>Report Issue Form</h2>
+            <p>
+                Facing an issue regarding anything in University? Don't worry, we're here for you. Simply fill out the form below, and we’ll take care of the rest!
+            </p>
+            <form action="/submit" method="post" class="form-container">
+                <label for="issue-name">Name:</label>
+                <input type="text" id="issue-name" name="name" placeholder="Your Name" required>
+
+                <label for="issue-email">Student Email:</label>
+                <input type="email" id="issue-email" name="email" placeholder="e.g., name@students.au.edu.pk" required pattern=".*@students\.au\.edu\.pk" 
+                title="Email must be from the students.au.edu.pk domain">
+
+                <label for="roll-id">Student Roll ID:</label>
+                <input type="number" id="roll-id" name="roll-id" placeholder="e.g., 12345" required>
+
+                <label for="dept">Department:</label>
+                <input type="text" id="dept" name="dept" placeholder="e.g., CS, BBA" required>
+
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" name="semester" placeholder="e.g., 5 Morning/Evening" required pattern="[1-8] (Morning|Evening)" 
+                title="Please follow the required pattern: 5 Morning/Evening">
+
+                <label for="issue-content">Issue Description:</label>
+                <textarea id="issue-content" name="issue" rows="5" placeholder="Describe the issue in detail..." required></textarea>
+
+                <label for="phone1">Contact Number 1:</label>
+                <input type="tel" id="phone1" name="phone1" placeholder="e.g., +923001234567" required pattern="\+?\d{10,13}" title="Enter a valid phone number with 10-13 digits">
+
+                <label for="phone2">Contact Number 2:</label>
+                <input type="tel" id="phone2" name="phone2" placeholder="Optional - e.g., +923001234567" pattern="\+?\d{10,13}" title="Enter a valid phone number with 10-13 digits">
+
+                <label for="alt-email">Alternative Email:</label>
+                <input type="email" id="alt-email" name="alt-email" placeholder="Optional - e.g., name@gmail.com">
+
+                <button type="submit">Report Issue</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 AU Islamabad. All rights reserved.</p>
         <div class="social-links">
             <a target="_blank" href="https://www.au.edu.pk/">Admissions</a>
-            <a target="_blank" href="https://x.com/Air_University">Twitter</a>
-            <a target="_blank" href="https://www.facebook.com/airuniversityofficial/">Facebook</a>
-            <a target="_blank" href="https://www.instagram.com/airuniversityofficial/">Instagram</a>
+            <a target="_blank" href="https://www.facebook.com/studentaffairsairuniversity">Facebook</a>
+            <a target="_blank" href="https://www.instagram.com/dsa_airuniversity/">Instagram</a>
         </div>
         <div class="credits">
-          <p> " Desgined and Created By "</p>
-          <p> Team UX Unite | Aezaz Hassan | Ahmad Kaleem | Urwa Imran | Syeda Hadia </p>
+            <p>Designed and Created By:</p>
+            <p>Team UX Unite | Aezaz Hassan | Ahmad Kaleem | Urwa Imran | Syeda Hadia</p>
         </div>
     </footer>
-    
-</Header>   
+
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/673e7afa2480f5b4f5a1468d/1id610pbm';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!-- End of Tawk.to Script -->
 </body>
 </html>

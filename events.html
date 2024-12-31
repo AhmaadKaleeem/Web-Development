@@ -3,43 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Events - AU Student Support Center</title>
     <link rel="stylesheet" href="css/styleevents.css">
 </head>
 <body>
 
-      <!--  Navigation Bar   -->
-<Header> 
-    <div  class="navbar"> 
-      <img src="images/logo.png" alt="Air University Student Support Center Logo">
-      <nav>
-        <a href="home.html">Home</a>
-        <a href="events.html">Events</a>
-        <a href="socities.html" >Societies </a>
-        <a href="gallery.html" >Gallery </a>
-        <a href="about-us.html"> About Us </a>
-        <a href="contact-us.html"> Contact Us </a>
-        <a href="report-issue.html">  Feedback and Issues </a>
-        <a href="#" onclick="Tawk_API.toggle();" class="chatbox" >  Chat Support </a>
-      </nav>
-    </div> 
-   
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <img src="images/logo.png" alt="Air University Student Support Center Logo">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="socities.html">Societies</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about-us.html">About Us</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="#" onclick="Tawk_API.toggle();" class="chatbox">Chat Support</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h1>Welcome to Our Events Page</h1>
+        <p>
+            The Directorate of Student Affairs at Air University plays a pivotal role in managing and conducting various events such as welcome parties, Air Nexus, and other significant events. Our dedicated team ensures that each event is organized seamlessly, providing students with memorable experiences.
+        </p>
+    </section>
+
+    <!-- Recent Events Section -->
+    <section class="recent-events">
+        <h2>Recent Events</h2>
+
+        <!-- Air Nexus Event -->
+        <div class="event">
+            <div class="event-header">
+                <h3>Air Nexus</h3>
+            </div>
+            <div class="event-video">
+                <video width="600" controls>
+                    <source src="videos/air-nexus.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="event-gallery">
+                <h4>Event Gallery</h4>
+                <div class="gallery-item">
+                    <img src="images/air-nexus-1.jpg" alt="Air Nexus Event">
+                    <p>Description of the image.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/air-nexus-2.jpg" alt="Air Nexus Event">
+                    <p>Description of the image.</p>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+        <!-- Code Air Event -->
+        <div class="event">
+            <div class="event-header">
+                <h3>Code Air</h3>
+            </div>
+            <div class="event-video">
+                <video width="600" controls>
+                    <source src="videos/code-air.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="event-gallery">
+                <h4>Event Gallery</h4>
+                <div class="gallery-item">
+                    <img src="images/code-air-1.jpg" alt="Code Air Event">
+                    <p>Description of the image.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/code-air-2.jpg" alt="Code Air Event">
+                    <p>Description of the image.</p>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+        <!-- Welcome Parties Event -->
+        <div class="event">
+            <div class="event-header">
+                <h3>Welcome Parties</h3>
+            </div>
+            <div class="event-video">
+                <video width="600" controls>
+                    <source src="videos/welcome-party.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="event-gallery">
+                <h4>Event Gallery</h4>
+                <div class="gallery-item">
+                    <img src="images/welcome-party-1.jpg" alt="Welcome Party Event">
+                    <p>Description of the image.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/welcome-party-2.jpg" alt="Welcome Party Event">
+                    <p>Description of the image.</p>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 AU Islamabad. All rights reserved.</p>
         <div class="social-links">
             <a target="_blank" href="https://www.au.edu.pk/">Admissions</a>
-            <a target="_blank" href="https://x.com/Air_University">Twitter</a>
-            <a target="_blank" href="https://www.facebook.com/airuniversityofficial/">Facebook</a>
-            <a target="_blank" href="https://www.instagram.com/airuniversityofficial/">Instagram</a>
+            <a target="_blank" href="https://www.facebook.com/studentaffairsairuniversity">Facebook</a>
+            <a target="_blank" href="https://www.instagram.com/dsa_airuniversity/">Instagram</a>
         </div>
         <div class="credits">
-          <p> " Desgined and Created By "</p>
-          <p> Team UX Unite | Aezaz Hassan | Ahmad Kaleem | Urwa Imran | Syeda Hadia </p>
+            <p>Designed and Created By</p>
+            <p>Team UX Unite | Aezaz Hassan | Ahmad Kaleem | Urwa Imran | Syeda Hadia</p>
         </div>
     </footer>
-    
-</Header>   
+
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/673e7afa2480f5b4f5a1468d/1id610pbm';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!-- End of Tawk.to Script -->
+
+    <!-- Interactivity Script -->
+    <script src="js/events.js"></script>
+
 </body>
 </html>
