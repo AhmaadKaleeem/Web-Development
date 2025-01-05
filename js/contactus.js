@@ -56,4 +56,25 @@ document.addEventListener('DOMContentLoaded', function() {
         easing: 'ease-in-out', // Easing function for animations
         offset: 120, // Offset (in px) from the original trigger point
     });
+
+    // Handle feedback form submission
+    const feedbackForm = document.getElementById('feedback-form');
+    feedbackForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('feedback-name').value;
+        const email = document.getElementById('feedback-email').value;
+        const feedback = document.getElementById('feedback-content').value;
+
+        const feedbackItem = document.createElement('div');
+        feedbackItem.classList.add('feedback-item');
+        feedbackItem.innerHTML = `
+            <h3>${name} (${email})</h3>
+            <p>${feedback}</p>
+        `;
+
+        document.getElementById('feedback-list').appendChild(feedbackItem);
+
+        feedbackForm.reset();
+    });
 });

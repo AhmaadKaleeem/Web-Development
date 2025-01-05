@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air University Student Support Center</title>
+    <title>Gallery - AU Student Support Center</title>
+    <meta name="description" content="Enjoy glimpses of various events organized by the Air University Student Support Center.">
     <link rel="stylesheet" href="css/stylegallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
@@ -21,137 +23,132 @@
             <a href="contact-us.html">Contact Us</a>
             <a href="#" onclick="Tawk_API.toggle();" class="chatbox">Chat Support</a>
         </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </div>
 </header>
 
+<!-- Hero Section -->
+<section class="hero content-section">
+    <h1>Gallery</h1>
+    <p>Explore our gallery to see pictures of various events, university life, and student activities at Air University. Relive the moments and cherish the memories.</p>
+</section>
+
 <!-- Directorate of Student Affairs Section -->
 <section class="section" id="student-affairs">
-  <h2>Directorate of Student Affairs</h2>
-  <div class="gallery">
-      <div class="gallery-item">
-          <img src="images/dsa1.jpg" alt="Director Meeting">
-          <footer>Director in a meeting with student representatives.</footer>
-      </div>
-      <div class="gallery-item">
-          <img src="images/dsa2.jpg" alt="Event Coordination">
-          <footer>Event Coordination - Ensuring smooth execution of activities.</footer>
-      </div>
-  </div>
-</section>
-
-
-
-<!-- Air University Section -->
-<section class="section" id="air-university">
-    <h2>Air University</h2>
+    <h2>Directorate of Student Affairs</h2>
     <div class="gallery">
-        <div class="gallery-item">
-            <img src="images/au1.jpg" alt="Campus View">
-            <footer>Main Campus - A serene view of Air University.</footer>
+        <div class="gallery-item" data-aos="zoom-in">
+            <img src="images/dsa1.jpg" alt="Director Meeting">
+            <footer>Director in a meeting with student representatives.</footer>
         </div>
-        <div class="gallery-item">
-            <img src="images/au2.jpg" alt="Library">
-            <footer>Library - A hub for academic resources and study.</footer>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="images/dsa2.jpg" alt="Event Coordination">
+            <footer>Event Coordination - Ensuring smooth execution of activities.</footer>
         </div>
+        <!-- Add more gallery items as needed -->
     </div>
-</section>
-
-<!-- Department Section -->
-<section class="section" id="department">
-    <h2>Department</h2>
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="images/department1.jpg" alt="CS Department">
-            <footer>CS Department - Home of tech enthusiasts and innovation.</footer>
-        </div>
-        <div class="gallery-item">
-            <img src="images/department2.jpg" alt="Engineering Department">
-            <footer>Engineering Department - Shaping the engineers of tomorrow.</footer>
-        </div>
-    </div>
-</section>
+  </section>
 <!-- Events Section -->
-<section class="section" id="events">
-  <h2>Events</h2>
-
-  <h3>Air Nexus</h3>
-  <div class="gallery">
-      <div class="gallery-item">
-          <img src="images/airnexus1.jpg" alt="Air Nexus Event 1">
-          <footer>Air Nexus - Event 1</footer>
-      </div>
-      <div class="gallery-item">
-          <img src="images/airnexus2.jpg" alt="Air Nexus Event 2">
-          <footer>Air Nexus - Event 2</footer>
-      </div>
-      <div class="gallery-item">
-          <img src="images/airnexus3.jpg" alt="Air Nexus Event 3">
-          <footer>Air Nexus - Event 3</footer>
-      </div>
-  </div>
-
-  <h3>Code Air</h3>
-  <div class="gallery">
-      <div class="gallery-item">
-          <img src="images/codeair1.jpg" alt="Code Air Event 1">
-          <footer>Code Air - Event 1</footer>
-      </div>
-      <div class="gallery-item">
-          <img src="images/codeair2.jpg" alt="Code Air Event 2">
-          <footer>Code Air - Event 2</footer>
-      </div>
-      <div class="gallery-item">
-          <img src="images/codeair3.jpg" alt="Code Air Event 3">
-          <footer>Code Air - Event 3</footer>
-      </div>
-  </div>
-
-  <h3>Welcome Party</h3>
-  <div class="gallery">
-      <div class="gallery-item">
-          <img src="images/welcome1.jpg" alt="Welcome Party 1">
-          <footer>Welcome Party - Event 1</footer>
-      </div>
-      <div class="gallery-item">
-          <img src="images/welcome2.jpg" alt="Welcome Party 2">
-          <footer>Welcome Party - Event 2</footer>
-      </div>
-      <div class="gallery-item">
-          <img src="images/welcome3.jpg" alt="Welcome Party 3">
-          <footer>Welcome Party - Event 3</footer>
-      </div>
-  </div>
+<section class="recent-events content-section">
+    <h2>Recent Events</h2>
+    <div class="event" data-aos="fade-up">
+        <img src="images/air-nexus.jpg" alt="Air Nexus Event">
+        <div class="event-details">
+            <h3>Air Nexus</h3>
+            <p>
+                Air Nexus is one of the most anticipated events at Air University. It brings together students from various disciplines to showcase their talents and compete in various competitions. The event includes tech exhibitions, cultural performances, and much more.
+            </p>
+        </div>
+    </div>
+    <div class="event" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/welcome-party.jpg" alt="Welcome Party">
+        <div class="event-details">
+            <h3>Welcome Party</h3>
+            <p>
+                The Welcome Party is an annual event organized to welcome new students to Air University. It is a fun-filled evening with music, dance, and various performances by students. It provides a great opportunity for new students to interact and make new friends.
+            </p>
+        </div>
+    </div>
+    <!-- Add more events as needed -->
 </section>
 
+<!-- Air University Departments Section -->
+<section class="departments content-section">
+    <h2>Air University Departments</h2>
+    <div class="department" data-aos="fade-up">
+        <img src="images/department-1.jpg" alt="Department 1">
+        <div class="department-details">
+            <h3>Department of Computer Science</h3>
+            <p>
+                The Department of Computer Science at Air University offers a comprehensive curriculum that covers various aspects of computer science, including programming, data structures, algorithms, and software engineering. The department is equipped with state-of-the-art labs and facilities to provide students with hands-on experience.
+            </p>
+        </div>
+    </div>
+    <div class="department" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/department-2.jpg" alt="Department 2">
+        <div class="department-details">
+            <h3>Department of Electrical Engineering</h3>
+            <p>
+                The Department of Electrical Engineering at Air University provides students with a strong foundation in electrical engineering principles and practices. The curriculum includes courses in circuit analysis, electronics, power systems, and control systems. The department also offers research opportunities in various areas of electrical engineering.
+            </p>
+        </div>
+    </div>
+    <!-- Add more departments as needed -->
+</section>
+
+
+
+<!-- Scroll-to-Top Button -->
+<button class="scroll-to-top hidden">&#8679;</button>
 
 <!-- Footer -->
 <footer>
-  <p>&copy; 2024 AU Islamabad. All rights reserved.</p>
-  <div class="social-links">
-      <a target="_blank" href="https://www.au.edu.pk/">Admissions</a>
-      <a target="_blank" href="https://www.facebook.com/studentaffairsairuniversity">Facebook</a>
-      <a target="_blank" href="https://www.instagram.com/dsa_airuniversity/">Instagram</a>
-  </div>
-  <div class="credits">
-      <p>Designed and Created By</p>
-      <p>Team UX Unite | Aezaz Hassan | Ahmad Kaleem | Urwa Imran | Syeda Hadia</p>
-  </div>
-</footer
->
+    <p>&copy; 2024 AU Islamabad. All rights reserved.</p>
+    <div class="social-links">
+        <a target="_blank" href="https://www.au.edu.pk/">Admissions</a>
+        <a target="_blank" href="https://www.facebook.com/studentaffairsairuniversity">Facebook</a>
+        <a target="_blank" href="https://www.instagram.com/dsa_airuniversity/">Instagram</a>
+    </div>
+    <div class="credits">
+        <p>Designed and Created By</p>
+        <p>Team UX Unite | Aezaz Hassan | Ahmad Kaleem | Urwa Imran | Syeda Hadia</p>
+    </div>
+</footer>
 
 <!-- Start of Tawk.to Script -->
 <script type="text/javascript">
-  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-  (function() {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/673e7afa2480f5b4f5a1468d/1id610pbm';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-  })();
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/673e7afa2480f5b4f5a1468d/1id610pbm';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
 </script>
 <!-- End of Tawk.to Script -->
 
+<!-- AOS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
+
+<!-- Interactivity Script -->
+<script src="js/gallery.js"></script>
+
+<!-- Initialize AOS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 800, // Animation duration
+            once: true, // Whether animation should happen only once - while scrolling down
+            easing: 'ease-in-out', // Easing function for animations
+            offset: 120, // Offset (in px) from the original trigger point
+        });
+    });
+</script>
 </body>
 </html>

@@ -3,122 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback & Report Issue - AU SSC</title>
-    <link rel="stylesheet" href="css/stylecontact-us.css">
+    <title>Contact Us - AU Student Support Center</title>
+    <meta name="description" content="Get in touch with the Air University Student Support Center. We're here to help you with any questions or issues you may have.">
+    <link rel="stylesheet" href="css/stylecontactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <div class="navbar">
-            <img src="images/logo.png" alt="Air University Student Support Center Logo">
-            <nav>
-                <a href="home.html">Home</a>
-                <a href="events.html">Events</a>
-                <a href="societies.html">Societies</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="about-us.html">About Us</a>
-                <a href="contact-us.html">Contact Us</a>
-                <a href="#" onclick="Tawk_API.toggle();" class="chatbox">Chat Support</a>
-            </nav>
+
+<!-- Navigation Bar -->
+<header>
+    <div class="navbar">
+        <img src="images/logo.png" alt="Air University Student Support Center Logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="socities.html">Societies</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="#" onclick="Tawk_API.toggle();" class="chatbox">Chat Support</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Feedback Form Section -->
-    <section class="feedback-form">
-        <div class="forms">
-            <img src="images/std-feedbackbg.png" alt="Feedback Background">
-            <h2>Feedback Form</h2>
-            <p>
-                We are happy to have you here and would love to hear your feedback about Air University and the Directorate of Student Affairs.
-            </p>
-            <form action="/submit" method="post" class="form-container">
-                <label for="feedback-name">Name:</label>
-                <input type="text" id="feedback-name" name="name" placeholder="Your Name" required>
+<!-- Hero Section -->
+<section class="hero content-section">
+    <h1>Contact Us</h1>
+    <p>Get in touch with the Air University Student Support Center. We're here to help you with any questions or issues you may have.</p>
+</section>
 
-                <label for="feedback-email">Student Email:</label>
-                <input type="email" id="feedback-email" name="email" placeholder="e.g., name@students.au.edu.pk" required pattern=".*@students\.au\.edu\.pk" 
-                title="Email must be from the students.au.edu.pk domain">
+<!-- Feedback Form Section -->
+<section class="feedback-form content-section">
+    <div class="forms">
+        <h2>Feedback Form</h2>
+        <p>We value your feedback. Please share your thoughts with us using the form below.</p>
+        <form action="/submit-feedback" method="post" class="form-container">
+            <label for="feedback-name">Name:</label>
+            <input type="text" id="feedback-name" name="name" placeholder="Your Name" required>
 
-                <label for="feedback-domain">Domain:</label>
-                <input type="text" id="feedback-domain" name="domain" placeholder="e.g., Air University or Student Affairs">
+            <label for="feedback-email">Email:</label>
+            <input type="email" id="feedback-email" name="email" placeholder="Your Email" required>
 
-                <label for="feedback-content">Feedback:</label>
-                <textarea id="feedback-content" name="feedback" rows="5" placeholder="Share your thoughts..." required></textarea>
+            <label for="feedback-content">Feedback:</label>
+            <textarea id="feedback-content" name="feedback" rows="5" placeholder="Share your thoughts..." required></textarea>
 
-                <button type="submit">Submit Feedback</button>
-            </form>
-        </div>
-    </section>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</section>
 
-    <!-- Report Issue Form Section -->
-    <section class="issue-form">
-        <div class="forms">
-            <img src="images/std-reportissue.png" alt="Report Issue Background">
-            <h2>Report Issue Form</h2>
-            <p>
-                Facing an issue regarding anything in University? Don't worry, we're here for you. Simply fill out the form below, and we’ll take care of the rest!
-            </p>
-            <form action="/submit" method="post" class="form-container">
-                <label for="issue-name">Name:</label>
-                <input type="text" id="issue-name" name="name" placeholder="Your Name" required>
+<!-- Report Issue Form Section -->
+<section class="issue-form content-section">
+    <div class="forms">
+        <h2>Report Issue Form</h2>
+        <p>Facing an issue regarding anything in University? Don't worry, we're here for you. Simply fill out the form below, and we’ll take care of the rest!</p>
+        <form action="/submit-issue" method="post" class="form-container">
+            <label for="issue-name">Name:</label>
+            <input type="text" id="issue-name" name="name" placeholder="Your Name" required>
 
-                <label for="issue-email">Student Email:</label>
-                <input type="email" id="issue-email" name="email" placeholder="e.g., name@students.au.edu.pk" required pattern=".*@students\.au\.edu\.pk" 
-                title="Email must be from the students.au.edu.pk domain">
+            <label for="issue-email">Student Email:</label>
+            <input type="email" id="issue-email" name="email" placeholder="e.g., name@students.au.edu.pk" required pattern=".*@students\.au\.edu\.pk" title="Email must be from the students.au.edu.pk domain">
 
-                <label for="roll-id">Student Roll ID:</label>
-                <input type="number" id="roll-id" name="roll-id" placeholder="e.g., 12345" required>
+            <label for="roll-id">Student Roll ID:</label>
+            <input type="number" id="roll-id" name="roll-id" placeholder="e.g., 12345" required>
 
-                <label for="dept">Department:</label>
-                <input type="text" id="dept" name="dept" placeholder="e.g., CS, BBA" required>
+            <label for="dept">Department:</label>
+            <input type="text" id="dept" name="dept" placeholder="e.g., CS, BBA" required>
 
-                <label for="semester">Semester:</label>
-                <input type="text" id="semester" name="semester" placeholder="e.g., 5 Morning/Evening" required pattern="[1-8] (Morning|Evening)" 
-                title="Please follow the required pattern: 5 Morning/Evening">
+            <label for="issue-content">Issue:</label>
+            <textarea id="issue-content" name="issue" rows="5" placeholder="Describe your issue..." required></textarea>
 
-                <label for="issue-content">Issue Description:</label>
-                <textarea id="issue-content" name="issue" rows="5" placeholder="Describe the issue in detail..." required></textarea>
+            <button type="submit">Submit Issue</button>
+        </form>
+    </div>
+</section>
 
-                <label for="phone1">Contact Number 1:</label>
-                <input type="tel" id="phone1" name="phone1" placeholder="e.g., +923001234567" required pattern="\+?\d{10,13}" title="Enter a valid phone number with 10-13 digits">
+<!-- Scroll-to-Top Button -->
+<button class="scroll-to-top hidden">&#8679;</button>
 
-                <label for="phone2">Contact Number 2:</label>
-                <input type="tel" id="phone2" name="phone2" placeholder="Optional - e.g., +923001234567" pattern="\+?\d{10,13}" title="Enter a valid phone number with 10-13 digits">
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 AU Islamabad. All rights reserved.</p>
+    <div class="social-links">
+        <a target="_blank" href="https://www.au.edu.pk/">Admissions</a>
+        <a target="_blank" href="https://www.facebook.com/studentaffairsairuniversity">Facebook</a>
+        <a target="_blank" href="https://www.instagram.com/dsa_airuniversity/">Instagram</a>
+    </div>
+    <div class="credits">
+        <p>Designed and Created By</p>
+        <p>Team UX Unite | Aezaz Hassan | Ahmad Kaleem | Urwa Imran | Syeda Hadia</p>
+    </div>
+</footer>
 
-                <label for="alt-email">Alternative Email:</label>
-                <input type="email" id="alt-email" name="alt-email" placeholder="Optional - e.g., name@gmail.com">
+<!-- Start of Tawk.to Script -->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/673e7afa2480f5b4f5a1468d/1id610pbm';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!-- End of Tawk.to Script -->
 
-                <button type="submit">Report Issue</button>
-            </form>
-        </div>
-    </section>
+<!-- AOS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 AU Islamabad. All rights reserved.</p>
-        <div class="social-links">
-            <a target="_blank" href="https://www.au.edu.pk/">Admissions</a>
-            <a target="_blank" href="https://www.facebook.com/studentaffairsairuniversity">Facebook</a>
-            <a target="_blank" href="https://www.instagram.com/dsa_airuniversity/">Instagram</a>
-        </div>
-        <div class="credits">
-            <p>Designed and Created By:</p>
-            <p>Team UX Unite | Aezaz Hassan | Ahmad Kaleem | Urwa Imran | Syeda Hadia</p>
-        </div>
-    </footer>
+<!-- Interactivity Script -->
+<script src="js/contactus.js"></script>
 
-    <!-- Start of Tawk.to Script -->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function() {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/673e7afa2480f5b4f5a1468d/1id610pbm';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!-- End of Tawk.to Script -->
+<!-- Initialize AOS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 800, // Animation duration
+            once: true, // Whether animation should happen only once - while scrolling down
+            easing: 'ease-in-out', // Easing function for animations
+            offset: 120, // Offset (in px) from the original trigger point
+        });
+    });
+</script>
 </body>
 </html>

@@ -4,104 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - AU Student Support Center</title>
-    <link rel="stylesheet" href="css/styleabout-us.css">
+    <meta name="description" content="Learn more about the Air University Student Support Center and our mission to support students.">
+    <link rel="stylesheet" href="css/styleaboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <div class="navbar">
-            <img src="images/logo.png" alt="Air University Student Support Center Logo">
-            <nav>
-                <a href="home.html">Home</a>
-                <a href="events.html">Events</a>
-                <a href="socities.html">Societies</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="about-us.html">About Us</a>
-                <a href="contact-us.html">Contact Us</a>
-                <a href="#" onclick="Tawk_API.toggle();" class="chatbox">Chat Support</a>
-            </nav>
+<!-- Navigation Bar -->
+<header>
+    <div class="navbar">
+        <img src="images/logo.png" alt="Air University Student Support Center Logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="socities.html">Societies</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="#" onclick="Tawk_API.toggle();" class="chatbox">Chat Support</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- About Us Section -->
-    <section class="about-us">
-        <h1>Student Affairs Department: Supporting Student Growth and Development</h1>
-        <p>
-            The Student Affairs Department at Air University, led by the Director of Student Affairs, works collaboratively with a Proctor, Assistant Proctor (female), and an Office Assistant. This dedicated team ensures the implementation of the university's Code of Conduct, which includes maintaining the dress code, discipline, and behavioral standards.
-        </p>
-    </section>
+<!-- Hero Section -->
+<section class="hero content-section">
+    <h1>About Us</h1>
+    <p>Learn more about the Air University Student Support Center and our mission to support students in their academic and extracurricular endeavors.</p>
+</section>
 
-    <!-- Activities and Events Section -->
-    <section class="activities-events">
-        <h2>Activities and Events</h2>
-        <p>
-            The department plays a pivotal role in fostering a vibrant campus life by facilitating and organizing various inter, intra, and extracurricular activities. These include:
-        </p>
-        <ul>
-            <li>Welcome and Farewell Parties</li>
-            <li>Student Week</li>
-            <li>Declamation Contests</li>
-            <li>Funfairs</li>
-            <li>Seminars</li>
-            <li>Variety Programs</li>
-            <li>National Day Celebrations</li>
-            <li>Educational and Recreational Visits</li>
-        </ul>
-    </section>
+<!-- Our Mission Section -->
+<section class="mission content-section">
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide comprehensive support to students at Air University, helping them achieve their academic and personal goals. We strive to create a vibrant campus life through various events, societies, and support services.</p>
+</section>
 
-    <!-- Event Management Section -->
-    <section class="event-management">
-        <h2>Event Management</h2>
-        <p>
-            To streamline event organization, the department processes requests submitted through the Event Management Form, accessible on the Air University website. The team provides comprehensive support, including financial, administrative, and logistical guidance, ensuring the success of indoor and outdoor activities conducted by students, departments, societies, and clubs.
-        </p>
-    </section>
-
-    <!-- Student Support Section -->
-    <section class="student-support">
-        <h2>Student Support</h2>
-        <p>
-            In addition to event facilitation, the Student Affairs Department actively assists in resolving student concerns through counseling and corrective measures. When necessary, they engage with parents to address specific issues and offer valuable guidance to students, promoting their personal and academic growth.
-        </p>
-    </section>
-
-    <!-- Contact Us Section -->
-    <section class="contact-us">
-        <h2>Contact Us</h2>
-        <p>
-            For further details and assistance, visit the Air University Student Affairs Department.
-        </p>
-        <a href="contact-us.html" class="contact-btn">Contact Us</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 AU Islamabad. All rights reserved.</p>
-        <div class="social-links">
-            <a target="_blank" href="https://www.au.edu.pk/">Admissions</a>
-            <a target="_blank" href="https://www.facebook.com/studentaffairsairuniversity">Facebook</a>
-            <a target="_blank" href="https://www.instagram.com/dsa_airuniversity/">Instagram</a>
+<!-- Our Team Section -->
+<section class="team content-section">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+        <div class="team-member" data-aos="fade-up">
+            <img src="images/team-member-1.jpg" alt="Team Member 1">
+            <div class="team-member-details">
+                <h3>John Doe</h3>
+                <p>Director of Student Affairs</p>
+            </div>
         </div>
-        <div class="credits">
-            <p>Designed and Created By</p>
-            <p>Team UX Unite | Aezaz Hassan | Ahmad Kaleem | Urwa Imran | Syeda Hadia</p>
+        <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/team-member-2.jpg" alt="Team Member 2">
+            <div class="team-member-details">
+                <h3>Jane Smith</h3>
+                <p>Assistant Director</p>
+            </div>
         </div>
-    </footer>
+        <!-- Add more team members as needed -->
+    </div>
+</section>
 
-    <!-- Start of Tawk.to Script -->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function() {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/673e7afa2480f5b4f5a1468d/1id610pbm';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!-- End of Tawk.to Script -->
+<!-- Our Services Section -->
+<section class="services content-section">
+    <h2>Our Services</h2>
+    <div class="service" data-aos="fade-up">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Academic Support</h3>
+        <p>We provide academic support services to help students succeed in their studies, including tutoring, workshops, and advising.</p>
+    </div>
+    <div class="service" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-users"></i>
+        <h3>Student Societies</h3>
+        <p>We support a variety of student societies that offer opportunities for students to engage in extracurricular activities and develop leadership skills.</p>
+    </div>
+    <div class="service" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-calendar-alt"></i>
+        <h3>Event Management</h3>
+        <p>We organize and manage events that enhance the student experience, including cultural festivals, academic conferences, and social gatherings.</p>
+    </div>
+    <!-- Add more services as needed -->
+</section>
 
+<!-- Scroll-to-Top Button -->
+<button class="scroll-to-top hidden">&#8679;</button>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 AU Islamabad. All rights reserved.</p>
+    <div class="social-links">
+        <a target="_blank" href="https://www.au.edu.pk/">Admissions</a>
+        <a target="_blank" href="https://www.facebook.com/studentaffairsairuniversity">Facebook</a>
+        <a target="_blank" href="https://www.instagram.com/dsa_airuniversity/">Instagram</a>
+    </div>
+    <div class="credits">
+        <p>Designed and Created By</p>
+        <p>Team UX Unite | Aezaz Hassan | Ahmad Kaleem | Urwa Imran | Syeda Hadia</p>
+    </div>
+</footer>
+
+<!-- Start of Tawk.to Script -->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/673e7afa2480f5b4f5a1468d/1id610pbm';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!-- End of Tawk.to Script -->
+
+<!-- AOS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
+
+<!-- Interactivity Script -->
+<script src="js/aboutus.js"></script>
+
+<!-- Initialize AOS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 800, // Animation duration
+            once: true, // Whether animation should happen only once - while scrolling down
+            easing: 'ease-in-out', // Easing function for animations
+            offset: 120, // Offset (in px) from the original trigger point
+        });
+    });
+</script>
 </body>
 </html>
