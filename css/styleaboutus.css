@@ -148,7 +148,7 @@ a {
 }
 .team-member img {
   width: 100%;
-  height: auto;
+  height: 400px;
   object-fit: cover;
 }
 .team-member-details {
