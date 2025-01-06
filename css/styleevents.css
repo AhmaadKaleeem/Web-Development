@@ -160,6 +160,7 @@
   .event-details video {
     width: 100%;
     margin-top: 10px;
+    height: 380px;
     border-radius: 10px;
   }
   
